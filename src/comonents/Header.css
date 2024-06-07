@@ -1,0 +1,66 @@
+
+
+.container {
+  display: flex;
+  overflow: hidden;
+
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  margin-left: 250px;
+  margin-bottom: 5%;
+  background-attachment: fixed;
+ 
+  z-index: 1;
+}
+
+.div-h1 {
+  flex: 1;
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  position: fixed;
+
+  color: rgb(131, 58, 180);
+ 
+}
+
+.div-a {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  position: fixed;
+
+  flex: 2;
+  margin-left: 60%;
+}
+
+.div-a a {
+  text-decoration: none;
+ 
+  position: relative;
+}
+
+.div-a a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s;
+}
+
+.div-a a:hover::after {
+  width: 100%;
+}
+
+.cart-count {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
