@@ -22,7 +22,7 @@ function CheckoutPage() {
       <h1>Checkout Page</h1>
       <h3>Cart Summary</h3>
       <p>Total Quantity: {totalQuantity}</p>
-      <p>Total Price: ${totalPrice}</p>
+      <p>Total Price: {totalPrice} Rs</p>
 
       <Popup trigger={<button className="proceed-btn">Continue Shopping</button>} modal nested>
         {close => (
